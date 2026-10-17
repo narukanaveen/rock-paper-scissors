@@ -1,25 +1,32 @@
 # Rock Paper Scissors
 
-A console-based Rock Paper Scissors game built as part of [The Odin Project's](https://www.theodinproject.com/) Foundations curriculum. 
+Link : https://narukanaveen.github.io/rock-paper-scissors/
 
-## About The Project
+A minimalist Rock Paper Scissors game built as part of [The Odin Project's](https://www.theodinproject.com/) Foundations curriculum.
 
-This is my first JavaScript project built from scratch. The game pits a human player against the computer for a 5-round match. It demonstrates core programming fundamentals including:
-* Variables and scoping
-* Functions and parameters
-* If/else control flow
-* For loops
-* Problem-solving and debugging
+## About the Project
 
-## Built With
-* JavaScript
-* HTML5
+This project started out as a simple console-based game running on `prompt()` and `console.log()` statements. Once I had the core JavaScript logic working, I revisited it to build a full UI from scratch—replacing the prompts with interactive buttons, real-time score tracking, and a warm peach-and-cream card design.
+
+Building this was also my first hands-on experience with:
+* Real DOM manipulation and event-driven JavaScript
+* Git workflows—creating feature branches (`rps-ui`), committing changes incrementally, merging back into `main`, and resolving repository cleanup
+* Designing and styling a clean, desktop-friendly layout with modern CSS
 
 ## How to Play
-Since this project focuses on core JavaScript logic, it does not have a graphical user interface (GUI) yet. The game is played entirely in the browser console.
 
-1. Clone this repository to your local machine.
-2. Open the `index.html` file in your web browser.
-3. Open the browser's Developer Tools (Right-click -> Inspect -> Console).
-4. Follow the prompts to enter your choice (Rock, Paper, or Scissors).
-5. Watch the console to see the round-by-round results and the final match winner!
+1. Pick **Rock**, **Paper**, or **Scissors** by clicking any of the move buttons.
+2. The computer picks its move randomly at the same time.
+3. The scoreboard updates after every round.
+4. First one to reach **5 points** wins the match.
+5. Hit **Play Again** to start a fresh match without refreshing the page.
+
+## Built With
+
+* HTML5
+* CSS3
+* Vanilla JavaScript
+
+---
+
+Copyright © 2026 [@narukanaveen](https://github.com/narukanaveen)
