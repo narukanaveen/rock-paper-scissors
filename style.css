@@ -16,9 +16,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2.5rem 1.5rem;
+  padding: 2rem 1rem;
 }
 
+/* Main Game Card */
 .game-card {
   background: #ffffff;
   border: 1px solid rgba(244, 211, 188, 0.55);
@@ -34,6 +35,7 @@ body {
   transition: transform 0.3s ease;
 }
 
+/* Header */
 .header h1 {
   font-size: 2.4rem;
   font-weight: 800;
@@ -49,6 +51,7 @@ body {
   margin-bottom: 2.75rem;
 }
 
+/* Scoreboard */
 .scoreboard {
   display: flex;
   justify-content: center;
@@ -90,6 +93,7 @@ body {
   color: #fdba74;
 }
 
+/* Move Buttons Grid */
 .buttons-container {
   display: flex;
   gap: 1.25rem;
@@ -102,6 +106,7 @@ body {
   border-radius: 18px;
   font-weight: 600;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .move-btn {
@@ -125,6 +130,7 @@ body {
   transform: translateY(0);
 }
 
+/* Results Display Box */
 .results-box {
   min-height: 64px;
   padding: 1.1rem 1.5rem;
@@ -140,6 +146,7 @@ body {
   line-height: 1.5;
 }
 
+/* Play Again Button */
 .reset-btn {
   margin-top: 2rem;
   padding: 1rem 2.5rem;
@@ -162,11 +169,13 @@ body {
   transform: translateY(0);
 }
 
+/* Minimalist Footer */
 .footer {
   margin-top: 2.25rem;
   font-size: 0.9rem;
   color: #78716c;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .footer a {
@@ -179,4 +188,68 @@ body {
 .footer a:hover {
   color: #9a3412;
   text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .game-card {
+    padding: 2rem 1.25rem;
+    border-radius: 22px;
+  }
+
+  .header h1 {
+    font-size: 1.85rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .scoreboard {
+    gap: 1.5rem;
+    padding: 1.25rem 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .score {
+    font-size: 2.5rem;
+  }
+
+  .score-divider {
+    font-size: 1.75rem;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .move-btn {
+    padding: 1rem;
+    font-size: 1.05rem;
+    width: 100%;
+  }
+
+  .results-box {
+    font-size: 0.95rem;
+    padding: 0.85rem 1rem;
+    min-height: 56px;
+  }
+
+  .reset-btn {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .footer {
+    margin-top: 1.5rem;
+    font-size: 0.82rem;
+  }
 }
