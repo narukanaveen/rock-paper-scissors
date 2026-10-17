@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <button id="Rock">Rock</button>
-    <button id="Paper">Paper</button>
-    <button id="Scissors">Scissors</button>
-    <div id="results"></div>
+  <main class="game-card">
+    <header class="header">
+      <h1>Rock Paper Scissors</h1>
+      <p class="subtitle">First to 5 points win!</p>
+    </header>
+
+    <div class="scoreboard">
+      <div class="score-box">
+        <span class="player-name">Player</span>
+        <span id="player-score" class="score">0</span>
+      </div>
+      <span class="score-divider">:</span>
+      <div class="score-box">
+        <span class="player-name">Computer</span>
+        <span id="computer-score" class="score">0</span>
+      </div>
+    </div>
+
+    <div class="buttons-container">
+      <button id="Rock" class="btn move-btn">✊ Rock</button>
+      <button id="Paper" class="btn move-btn">✋ Paper</button>
+      <button id="Scissors" class="btn move-btn">✌️ Scissors</button>
+    </div>
+
+    <div id="results" class="results-box">
+      Choose your move to start!
+    </div>
+
+    <button id="reset-btn" class="btn reset-btn" style="display: none;">Play Again</button>
+  </main>
+
+  <footer class="footer">
+    Copyright © 2026 <a href="https://github.com/narukanaveen" target="_blank" rel="noopener noreferrer">@narukanaveen</a>
+  </footer>
 </body>
 </html>
